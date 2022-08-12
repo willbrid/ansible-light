@@ -18,7 +18,7 @@ wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --d
 Installons virtualbox 6.1
 ```
 sudo apt-get update
-sudo apt-get install virtualbox-6.1
+sudo apt-get install virtualbox virtualbox-dkms virtualbox-guest-additions-iso
 ```
 
 - Installation de vagrant
@@ -33,6 +33,31 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 ```
 sudo apt update && sudo apt install vagrant
 ```
+
+Enfin nous ajoutons le plugin vagrant-vbguest de vagrant
+```
+vagrant plugin install vagrant-vbguest
+```
+
+Nous pouvons ajouter une box vagrant pour rocky linux 8 :
+```
+vagrant box add geerlingguy/rockylinux8
+```
+
+Nous pouvons faire un test pour vérifier nos installations :
+```
+mkdir ~/ansible-test
+```
+
+```
+vagrant init geerlingguy/rockylinux8
+```
+
+Un fichier Vagrantfile sera créé. Ensuite nous lançons notre vm :
+```
+vagrant up
+```
+
 <br>
 
 **Sources**: 
