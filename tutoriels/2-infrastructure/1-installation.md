@@ -47,6 +47,7 @@ vagrant box add geerlingguy/rockylinux8
 Nous pouvons faire un test pour vérifier nos installations :
 ```
 mkdir ~/ansible-test
+cd ansible-test
 ```
 
 ```
