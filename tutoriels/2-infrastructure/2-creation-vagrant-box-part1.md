@@ -34,11 +34,12 @@ Puis nous cliquons sur le bouton **Créer**
 ![create_vm_virtualbox6.png](../../images/create_vm_virtualbox6.png)
 
 - Pour cette machine virtuelle créée, nous la sélectionnons, puis nous faisons un clic droit et nous cliquons sur configuration.
+
 -- Nous désactivons le contrôleur usb
 
 ![create_vm_virtualbox7.png](../../images/create_vm_virtualbox7.png)
 
--- Nous désactivons le son
+-- Nous désactivons le son puis nous cliquons sur **OK**.
 
 ![create_vm_virtualbox8.png](../../images/create_vm_virtualbox8.png)
 
