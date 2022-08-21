@@ -41,7 +41,7 @@ vagrant plugin install vagrant-vbguest
 
 Nous pouvons ajouter une box vagrant pour rocky linux 8 :
 ```
-vagrant box add geerlingguy/rockylinux8
+vagrant box add willbrid/rockylinux8
 ```
 
 Nous pouvons faire un test pour vérifier nos installations :
@@ -51,10 +51,10 @@ cd ansible-test
 ```
 
 ```
-vagrant init geerlingguy/rockylinux8
+vagrant init willbrid/rockylinux8
 ```
 
-Un fichier Vagrantfile sera créé. Ensuite nous lançons notre vm :
+Un fichier Vagrantfile sera créé. Ensuite nous lançons notre vm contenant les configurations par défaut définies dans le fichier Vagrantfile :
 ```
 vagrant up
 ```
