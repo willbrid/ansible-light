@@ -11,7 +11,7 @@ Notre application Web utilise Django, nous devons donc nous assurer que Django e
 ansible app -b -m yum -a "name=python3-pip state=present"
 ```
 
-- Installons de Django
+- Installons Django
 ```
 ansible app -b -m pip -a "name=django<4 state=present"
 ```
