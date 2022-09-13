@@ -17,16 +17,16 @@ Nous pouvons supprimer un groupe en définissant **state=absent** , définir un 
 ansible app -b -m user -a "name=johndoe group=admin createhome=yes"
 ```
 
-Si ous souhaitons créer automatiquement une clé SSH pour le nouvel utilisateur (si elle n'existe pas déjà), nous pouvons exécuter la même commande avec le paramètre supplémentaire **generate_ssh_key=yes** .
+Si nous souhaitons créer automatiquement une clé SSH pour le nouvel utilisateur (si elle n'existe pas déjà), nous pouvons exécuter la même commande avec le paramètre supplémentaire **generate_ssh_key=yes** .
 
 ```
 ansible app -b -m user -a "name=johndoe group=admin createhome=yes generate_ssh_key=yes"
 ```
 
-Nous pouvez également définir :
-• L'UID de l'utilisateur avec **uid=[uid]**
-• Le shell de l'utilisateur avec **shell=[shell]**
-• Le mot de passe des utilisateurs avec **password=[encrypted-password]**
+Nous pouvons également définir :
+--- L'UID de l'utilisateur avec **uid=[uid]** <br>
+--- Le shell de l'utilisateur avec **shell=[shell]** <br>
+--- Le mot de passe des utilisateurs avec **password=[encrypted-password]**
 <br>
 
 - supprimons le compte johndoe
