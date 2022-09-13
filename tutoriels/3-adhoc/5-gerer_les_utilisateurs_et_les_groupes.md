@@ -23,7 +23,7 @@ Si nous souhaitons créer automatiquement une clé SSH pour le nouvel utilisateu
 ansible app -b -m user -a "name=johndoe group=admin createhome=yes generate_ssh_key=yes"
 ```
 
-Nous pouvons également définir :
+Nous pouvons également définir : <br>
 --- L'UID de l'utilisateur avec **uid=[uid]** <br>
 --- Le shell de l'utilisateur avec **shell=[shell]** <br>
 --- Le mot de passe des utilisateurs avec **password=[encrypted-password]**
