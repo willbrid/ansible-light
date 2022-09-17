@@ -20,6 +20,8 @@ copions ce script via ansible dans nos serveurs au niveau du repertoire **/opt**
 ansible multi -b -m copy -a "src=/tmp/minute-script.sh dest=/opt/minute-script.sh"
 ```
 
+créeons notre cronjob
+
 ```
 ansible multi -b -m cron -a "name='minute-cron-all-servers' minute=* job='sh /opt/minute-script.sh'"
 ```
